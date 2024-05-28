@@ -90,7 +90,7 @@ async function extractProductData(
 
   const linkElement = await item.$(config.selectors.productLink);
   const link = linkElement ? await linkElement.getAttribute('href') : '';
-  const cleanedLink = link ? `${config.baseUrl}${link}` : '';
+  const cleanedLink = link ? `https:${link}` : '';
 
   const imageElement = await item.$(config.selectors.productImage);
   const imageUrl = imageElement ? await imageElement.getAttribute('src') : '';

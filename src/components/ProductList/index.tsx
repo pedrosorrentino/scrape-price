@@ -1,4 +1,3 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
 import Link from 'next/link';
 import { NotFound } from '../NotFound';
@@ -113,7 +112,7 @@ const Table = ({
                 <p className='text-xs text-slate-400'>{formattedDate}</p>
               </div>
 
-              <p className='text-2xl font-semibold text-lime-500'>
+              <p className='text-3xl font-semibold text-lime-500'>
                 {product.priceOffer !== 0
                   ? product.priceOffer
                   : product.priceOriginal}{' '}
